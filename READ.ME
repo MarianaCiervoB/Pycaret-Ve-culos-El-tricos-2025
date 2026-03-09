@@ -1,0 +1,36 @@
+# Previsão de Difusão de Veículos Elétricos (VEs) - 2025
+
+Este repositório contém um projeto de **Machine Learning** focado na análise e previsão do crescimento da frota de veículos elétricos por município. Utilizando a biblioteca **PyCaret**, o projeto automatiza a comparação de modelos de regressão para encontrar a melhor precisão nos dados de 2025.
+
+O objetivo principal é processar dados históricos de emplacamentos e frotas para prever a tendência de adoção de veículos sustentáveis. O projeto abrange desde o tratamento inicial dos dados até a avaliação de métricas de desempenho de modelos preditivos.
+
+### Etapas do Notebook:
+1. **Tratamento de Dados**: Limpeza e tipagem de colunas como `Cod_municipio`.
+2. **Análise de Dados**: Agrupamento e organização de séries temporais ou geográficas.
+3. **AutoML com PyCaret**: 
+    - Setup do ambiente de regressão.
+    - Comparação de modelos (Random Forest, XGBoost, CatBoost, etc.).
+    - Otimização de hiperparâmetros.
+4. **Visualização**: Gráficos de erro residual e importância de variáveis.
+
+
+## Bibliotecas
+
+* **Python 3.10+**
+* **Pandas**: Manipulação de DataFrames.
+* **PyCaret**: Biblioteca de Machine Learning de baixo código.
+* **Scikit-Learn**: Base para os modelos de regressão.
+
+
+## Como Executar o Código Localmente
+
+### 1. Requisitos Prévios
+Certifique-se de ter o Python instalado e o arquivo de dados `dados_VEs_porMunicipio2025.csv` na pasta correta.
+No seu terminal ou em uma célula do notebook, instale as dependências:
+```bash
+pip install pandas pycaret
+```
+No arquivo PyCaret_VE-2025.ipynb (caminho = r"C:\Users\SEU_USUARIO\CAMINHO_DA_PASTA\dados_VEs_porMunicipio2025.csv"), ajuste o caminho do dataset para o local onde ele está salvo no seu computador
+
+##Nota: 
+Este projeto foi desenvolvido inicialmente em ambiente Google Colab e adaptado para execução local via VS Code.
